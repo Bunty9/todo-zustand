@@ -29,17 +29,17 @@ function App() {
     <>
       <div className="h-screen w-screen flex justify-center items-center">
         <div className="w-[400px] p-5 rounded-lg shadow-lg bg-[#242424] ">
-          <h1 className="font-bold text-3xl">Todos</h1>
-          <p>Add your todos</p>
+          <h1 className="font-bold text-3xl cursor-none">Todos</h1>
+          <p className='cursor-none'>Add your todos</p>
           <form onSubmit={handleSubmit}>
             <div className=" mt-3">
-              <input type="text" placeholder="enter your todo" value={todo} onChange={(e)=> setTodo(e.target.value)} className="w-full h-10 p-2 bg-[#282828] outline-red-400 border-red-400 rounded-lg " />
+              <input type="text" placeholder="enter your todo" value={todo} onChange={(e)=> setTodo(e.target.value)} className="w-full h-10 p-2 bg-[#1c1c1c] shadow-xl border border-red-400 rounded-lg " />
             </div>
           </form>
           <div className='mt-5'>
             {todoList.length > 0 && todoList.map((item) => (
-              <div key={item.id} className='w-full p-2 mt-2 rounded-lg border border-r-green-400 flex justify-between items-center '>
-                <h1 className={`${item.completed ? "line-through" : "" }`} >{item.todo}</h1>
+              <div key={item.id} className='w-full p-2 mt-2 rounded-lg border border-green-400 flex justify-between items-center '>
+                <h1 className={`${item.completed ? "line-through" : ""} cursor-none`}>{item.todo}</h1>
                 <div className='flex'>
                   <input type="checkbox" checked={item.completed} onChange={(e)=>toggleTodo(item.id,e.target.checked)} />
                   <img src={deleteIcon} alt="delete" className="w-5 ml-2 h-5 cursor-pointer" onClick={()=>removeTodo(item.id)} />
@@ -50,8 +50,12 @@ function App() {
             ))}
             </div>
         </div>
-        
+        <div className='flex absolute bottom-5'>
+          <h1 className='cursor-none'>made with 💪🏼 by</h1>
+          <h1 className='ml-2 text-red-400 cursor-pointer' onClick={() => window.location.href = 'https://github.com/Bunty9'}>Bunty9</h1>
         </div>
+      </div>
+
     </>
   )
 }
