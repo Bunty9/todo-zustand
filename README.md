@@ -31,7 +31,7 @@ Now, you can open http://localhost:5173 in your browser to see the application.
 Zustand is a small, fast and scaleable bearbones state-management solution. It has a simple and intuitive API that allows you to focus on your application logic rather than dealing with complex state management patterns.
 
 Here's a simple example of how Zustand is used in this project:
-```
+```ts
 import create from 'zustand';
 
 // Define your store
@@ -55,7 +55,7 @@ Tailwind CSS is a utility-first CSS framework that is highly customizable and al
 In this project, Tailwind CSS is used for styling the components. It allows for a more efficient and maintainable way of writing styles, as it eliminates the need for writing custom CSS classes for each component.
 
 Here's an example of how Tailwind CSS is used in this project:
-```
+```ts
 <div className="flex items-center justify-between p-6 bg-white shadow">
   <h1 className="text-2xl font-bold text-gray-800">Todo List</h1>
   <button className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">
