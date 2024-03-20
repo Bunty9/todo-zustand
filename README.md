@@ -9,7 +9,7 @@ To get started with this project, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Bunty9/todo-zustand.git
 ```
 
 2. Navigate into the project directory:
@@ -55,7 +55,7 @@ Tailwind CSS is a utility-first CSS framework that is highly customizable and al
 In this project, Tailwind CSS is used for styling the components. It allows for a more efficient and maintainable way of writing styles, as it eliminates the need for writing custom CSS classes for each component.
 
 Here's an example of how Tailwind CSS is used in this project:
-```ts
+```html
 <div className="flex items-center justify-between p-6 bg-white shadow">
   <h1 className="text-2xl font-bold text-gray-800">Todo List</h1>
   <button className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">
