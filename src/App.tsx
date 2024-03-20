@@ -41,7 +41,7 @@ function App() {
               <div key={item.id} className='w-full p-2 mt-2 rounded-lg border border-r-green-400 flex justify-between items-center '>
                 <h1 className={`${item.completed ? "line-through" : "" }`} >{item.todo}</h1>
                 <div className='flex'>
-                  <input type="checkbox" onChange={(e)=>toggleTodo(item.id,e.target.checked)} />
+                  <input type="checkbox" checked={item.completed} onChange={(e)=>toggleTodo(item.id,e.target.checked)} />
                   <img src={deleteIcon} alt="delete" className="w-5 ml-2 h-5 cursor-pointer" onClick={()=>removeTodo(item.id)} />
 
                 </div>
