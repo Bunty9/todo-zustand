@@ -29,7 +29,7 @@ npm install
 4. Start the development server:
 
 ```bash
-npm run devnpm run dev
+npm run dev
 ```
 
 Now, you can open http://localhost:5173 in your browser to see the application.
